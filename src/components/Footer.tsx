@@ -2,7 +2,6 @@ import { Logo } from "./Logo";
 
 const NAV_LINKS = [
   { label: "Sobre", href: "#sobre" },
-  { label: "Como atuamos", href: "#como-atuamos" },
   { label: "Para quem", href: "#para-quem" },
   { label: "Causas", href: "#causas" },
   { label: "Contato", href: "#contato" },
@@ -16,8 +15,8 @@ export function Footer() {
           <div class="lg:col-span-1">
             <Logo className="h-9" />
             <p class="mt-5 text-white/50 text-sm leading-relaxed max-w-xs">
-              Consultoria júnior de impacto social. Fundada em setembro de
-              2025, Pernambuco.
+              Consultoria júnior de impacto social. Fundada em setembro de 2025,
+              Pernambuco.
             </p>
           </div>
 
@@ -67,10 +66,16 @@ export function Footer() {
             © 2026 Projeto UNNI. Todos os direitos reservados.
           </p>
           <div class="flex gap-6">
-            <a href="#" class="text-white/40 hover:text-white text-xs transition-colors">
+            <a
+              href="#"
+              class="text-white/40 hover:text-white text-xs transition-colors"
+            >
               Política de Privacidade
             </a>
-            <a href="#" class="text-white/40 hover:text-white text-xs transition-colors">
+            <a
+              href="#"
+              class="text-white/40 hover:text-white text-xs transition-colors"
+            >
               Termos de Uso
             </a>
           </div>
