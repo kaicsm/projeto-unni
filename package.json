@@ -1,0 +1,21 @@
+{
+  "name": "unni-landing",
+  "module": "src/main.tsx",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --hot src/server.ts",
+    "build": "bun run build.ts",
+    "start": "NODE_ENV=production bun run src/server.ts"
+  },
+  "dependencies": {
+    "preact": "^10.29.2",
+    "unni-landing": "."
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-plugin-tailwind": "^0.1.2",
+    "tailwindcss": "^4.3.1",
+    "typescript": "^5.9.3"
+  }
+}
