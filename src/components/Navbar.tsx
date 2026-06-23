@@ -13,7 +13,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header class="absolute top-0 inset-x-0 z-50 hero-fade-in">
+    <header class="absolute top-0 inset-x-0 z-50">
       <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-10 py-6">
         <Logo className="h-8 md:h-9" />
 

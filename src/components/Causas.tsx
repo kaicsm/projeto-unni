@@ -51,7 +51,7 @@ export function Causas() {
   return (
     <section id="causas" class="bg-slate-50 py-24 lg:py-28">
       <div class="max-w-7xl mx-auto px-6 lg:px-10">
-        <div data-reveal="left" class="max-w-2xl">
+        <div data-reveal="up" class="max-w-2xl">
           <p class="eyebrow mb-4">Calendário de causas</p>
           <h2 class="text-3xl sm:text-4xl text-slate-900">
             A UNNI em <span class="text-unni-gold">ação.</span>

@@ -85,11 +85,11 @@ export function EncontreSeuLugar() {
         </div>
 
         <div
-          data-reveal="scale"
+          data-reveal="up"
           data-delay="2"
           class="mt-12 bg-indigo-50 rounded-3xl p-8 sm:p-12 grid lg:grid-cols-2 gap-10 items-center"
         >
-          <div key={active} class="hero-fade-up">
+          <div>
             <h3 class="text-2xl sm:text-[1.75rem] leading-snug text-slate-900">
               {content.heading}
             </h3>

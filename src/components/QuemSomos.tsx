@@ -2,7 +2,7 @@ export function QuemSomos() {
   return (
     <section id="sobre" class="bg-white py-24 lg:py-32">
       <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
-        <div data-reveal="left">
+        <div data-reveal="up">
           <p class="eyebrow mb-4">Quem somos</p>
           <h2 class="text-3xl sm:text-4xl text-slate-900 leading-tight">
             Jovens acelerando
@@ -29,7 +29,7 @@ export function QuemSomos() {
         </div>
 
         <div
-          data-reveal="right"
+          data-reveal="up"
           data-delay="1"
           class="relative max-w-md mx-auto lg:mx-0 lg:ml-auto w-full"
         >

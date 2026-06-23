@@ -59,7 +59,7 @@ export function ContactSection() {
   return (
     <section id="contato" class="bg-unni-navy py-24 lg:py-28">
       <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16">
-        <div data-reveal="left">
+        <div data-reveal="up">
           <p class="eyebrow mb-4">Fale conosco</p>
           <h2 class="text-3xl sm:text-4xl text-white leading-tight">
             Vamos construir <span class="text-unni-gold">juntos</span> o futuro
@@ -109,7 +109,7 @@ export function ContactSection() {
           </div>
         ) : (
           <form
-            data-reveal="right"
+            data-reveal="up"
             data-delay="1"
             onSubmit={handleSubmit}
             class="flex flex-col gap-5"
