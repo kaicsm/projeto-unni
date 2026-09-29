@@ -84,9 +84,12 @@ bun run start
   exatamente o texto do design; o conteúdo das outras duas abas foi escrito
   no mesmo tom/estilo (não estava visível no print) — ajuste livremente em
   `src/components/EncontreSeuLugar.tsx`.
-- O formulário de contato é funcional no front-end (estado local, validação
-  HTML5) mas não está conectado a um backend/e-mail real — o `onSubmit` em
-  `ContactSection.tsx` é o ponto para integrar com uma API.
+- O formulário de contato envia para o Web3Forms. Configure a variável
+  `WEB3FORMS_SECRET` com a Access Key do formulário no projeto da Vercel, nos
+  ambientes **Production** e **Preview**. A chave é pública por definição do
+  Web3Forms e fica visível no JavaScript entregue ao navegador. Para testar
+  localmente, defina `WEB3FORMS_SECRET` no ambiente antes de executar `bun run dev`
+  ou `bun run build`.
 - A logo original (`logo-white_1.png`) tinha fundo preto sólido; foi
   processada para remover o fundo e exportada como PNG transparente
   (`public/images/logo.png`), permitindo uso tanto sobre o header

@@ -13,6 +13,11 @@ const result = await Bun.build({
   target: "browser",
   minify: true,
   sourcemap: "linked",
+  define: {
+    "process.env.WEB3FORMS_SECRET": JSON.stringify(
+      process.env.WEB3FORMS_SECRET ?? "",
+    ),
+  },
   plugins: [tailwind],
 });
 
