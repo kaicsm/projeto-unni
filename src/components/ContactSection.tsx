@@ -2,8 +2,8 @@ import { useState } from "preact/hooks";
 import type { JSX } from "preact";
 import { MailIcon, InstagramIcon } from "../icons";
 
-// Acesse https://web3forms.com, insira o e-mail da empresa e cole a chave gerada aqui.
-const WEB3FORMS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY";
+// Web3Forms access keys are public and injected into the browser bundle at build time.
+const WEB3FORMS_KEY = process.env.WEB3FORMS_SECRET ?? "";
 
 type RoleOption = "Jovem" | "Empresa" | "Instituição";
 
@@ -19,6 +19,14 @@ export function ContactSection() {
     e.preventDefault();
     setLoading(true);
     setError("");
+
+    if (!WEB3FORMS_KEY) {
+      setError(
+        "O formulário está indisponível no momento. Envie um e-mail para projetouni16758@gmail.com.",
+      );
+      setLoading(false);
+      return;
+    }
 
     const form = e.currentTarget;
     const data = new FormData(form);
